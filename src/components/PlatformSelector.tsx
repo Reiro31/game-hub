@@ -18,7 +18,7 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
         {selectedPlatform?.name || "Platforms"}
       </MenuButton>
-      <MenuList backdropBlur={5}>
+      <MenuList backgroundColor="#111">
         {data.map((platform) => (
           <MenuItem
             onClick={() => onSelectPlatform(platform)}
